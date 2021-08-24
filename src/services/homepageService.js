@@ -248,30 +248,34 @@ let sendGuideToUseBot = (sender_psid) => {
         try {
 
             let response1 = {
-                "text" : "Hi there! I'm a chatbot building with Node.js platform.\nSo, What can I do? 😎" +
-                    "\n\nFirst, I can show you the restaurant's menu: lunch, dinner and pub menu, etc. " +
-                    "\n\nThen, you can make a reservation. No worry, it isn't a 'real' restaurant. Feel free to test me. 😊"
+                "text" : "မင်္ဂလာပါ Ooredoo B2B Sim Card ဆိုတာ" +
+                    "\n\n🎯 ရက် ၃၀ စာအကျိုးခံစားခွင့်တွေနဲ့ စွယ်စုံသုံး အစီအစဉ် " +
+                    "\n\n🎯 ဝယ်ယူထားတဲ့ အစီအစဉ်တွေနဲ့အတူ ၁၀၀% ဖုန်းဘေလ်ပြန်အမ်းငွေပြန်ရ " +
+                    "\n\n🎯 နေ့စဉ် Free ပေးဒေတာနဲ့ ဖုန်းခေါ်ဆိုမှုများကုန်ဆုံးသွားပါလျှင် ပြန်အမ်းငွေ Bonus ထဲမှ ထပ်မံဝယ်ယူနိုင်ပြီး နောက်လအထိ ယူဆောင်သွားနိုင်ပါတယ် " +
+                    "\n\n🔖⁠ Ooredoo Sim Card အသစ်တစ်ခုကို Free ရမည်ဖြစ်ပြီး ဝန်ထမ်းများကိုယ်တိုင် အစီအစဉ်ကို အခမဲ့ချိတ်ဆက်ဆောင်ရွက်ပေးနေပါသည်။ 😊"
             };
             let response2 = {
-                text: "Second, I can understand the sentences with meaning 'greetings', 'thanks' and 'bye'." +
-                    "\n\nE.g: If you say 'What's up 🇺🇸' or 'hola 🇪🇸' or 'hallo 🇩🇪', I know that it's a 'greetings' sentence. The same thing with 'thanks' and 'bye' sentences." +
-                    "\n\nTry to say: hello, bye, thanks a lot, Bonjour 🇫🇷, etc. you will understand what I mean. 😗"
+                text: "DIA WiFi (Dedicated Internet Access) ဆိုတာကတော့" +
+                    "\n\nစီးပွားရေးလုပ်ငန်းတွေအတွက် Work from Home ကာလတွေကို Ooredoo Myanmar မှ လိုင်းဆွဲအားကောင်းပြီးငြိမ်တဲ့ DIA WiFi နဲ့ ဖြတ်သန်းလိုက်ပါ။ \n\nDedicated ဆိုတော့ upload speed နဲ့ download speed အတူတူရပါမယ်။" +
+                    "\n\nSLA Agreement နဲ့ အာမခံချက်ပါသေးတယ်။ လိုင်းဝယ်ပြီး WiFi ပြန်ရောင်းရင်လည်း မဆိုးဘူးဆိုရမှာ 😁"
             };
             let response3 = {
-                text:  "Finally, remember I'm just a bot. So, That 's what can do for you today. 🤠" +
-                    "\n\nBuild this bot from scratch with Node.js:👇" +
-                    "\nYoutube: \n👉 https://bit.ly/tutorialBuildAwesomeBot"
+                text:  "Ooredoo ရဲ့ Official Partner အနေနဲ့ နောက်ဆုံးပြောချင်တာတော့ \n\npromo,plan update လျှော့စျေးသတင်းနဲ့ product package အသစ်တွေအတွက် 🤠" +
+                    "\n\nသတင်းမှန်မှန်ကန်ကန်ရနိုင်ဖို့ အောက်ပါလင့်နှိပ်ပြီး channel ကို join ပါ👇" +
+                    "\nTelegram: \n👉 https://t.me/dream2reality" +
+                    "\nViber Group: \n👉 https://invite.viber.com/?g2=AQBlOOzHLIrmtE3X8FkCE1dbuPwO4vNmo0Umm415sZMN2TEuM%2BkcKforc1O5sUqB"
+                    
             };
             let response5 = {
                 "attachment": {
                     "type": "template",
                     "payload": {
                         "template_type": "button",
-                        "text": `Back to main menu or make a reservation ?`,
+                        "text": `B2B Sim Card နဲ့ DIA WiFi အသေးစိတ်ကို ပြန်သွားကြည့်မလား?`,
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "SHOW MAIN MENU",
+                                "title": "👉 ကြည့်မယ်",
                                 "payload": "MAIN_MENU"
                             },
                             {

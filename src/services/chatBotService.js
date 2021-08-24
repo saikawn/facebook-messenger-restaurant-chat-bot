@@ -30,7 +30,7 @@ let getFacebookUsername = (sender_psid) => {
 let sendResponseWelcomeNewCustomer = (username, sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
-            let response_first = { "text": `မင်္ဂလာပါ ${username} , D2R မှ ကြိုဆိုပါတယ်။ \n\n Ooredoo Myanmar ရဲ့ B2B Internet Package နဲ့ DIA WiFi ကို အသေးစိတ်စုံစမ်းနိုင်ပါပြီ။` };
+            let response_first = { "text": `မင်္ဂလာပါ ${username} , D2R မှ ကြိုဆိုပါတယ်။ \n\nOoredoo Myanmar ရဲ့ B2B Internet Package နဲ့ DIA WiFi ကို အသေးစိတ်စုံစမ်းနိုင်ပါပြီ။` };
             let response_second = {
                 "attachment": {
                     "type": "template",
@@ -54,7 +54,7 @@ let sendResponseWelcomeNewCustomer = (username, sender_psid) => {
                                     },
                                     {
                                         "type": "postback",
-                                        "title": "GUIDE TO USE THIS BOT",
+                                        "title": "B2B Sim နှင့် DIA WiFi ဆိုတာ?",
                                         "payload": "GUIDE_BOT",
                                     }
                                 ],
