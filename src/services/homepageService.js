@@ -31,7 +31,7 @@ let setUpMessengerPlatform = (PAGE_ACCESS_TOKEN) => {
                             },
                             {
                                 "type": "postback",
-                                "title": "Restart this conversation",
+                                "title": "Restart the Bot",
                                 "payload": "RESTART_CONVERSATION"
                             }
                         ]
