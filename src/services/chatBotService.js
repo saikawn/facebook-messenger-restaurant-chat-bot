@@ -49,13 +49,14 @@ let sendResponseWelcomeNewCustomer = (username, sender_psid) => {
                                     },
                                     {
                                         "type": "postback",
-                                        "title": "RESERVE A TABLE",
-                                        "payload": "RESERVE_TABLE",
+                                        "title": "Product Intro",
+                                        "payload": "GUIDE_BOT",
                                     },
                                     {
-                                        "type": "postback",
-                                        "title": "B2B Sim နှင့် DIA WiFi ဆိုတာ?",
-                                        "payload": "GUIDE_BOT",
+                                        "type": "web_url",
+                                        "title": "Visit Website",
+                                        "url": "https://www.d2r.biz",
+                                        "webview_height_ratio": "full"
                                     }
                                 ],
                             } ]
@@ -89,24 +90,26 @@ let sendMainMenu = (sender_psid) => {
                         "template_type": "generic",
                         "elements": [
                             {
-                                "title": "Our menus",
-                                "subtitle": "We are pleased to offer you a wide-range of menu for lunch or dinner.",
-                                "image_url": "https://bit.ly/imageMenu",
+                                "title": "Our Products",
+                                "subtitle": "B2B internet package နဲ့ DIA WiFi ဝန်ဆောင်မှုပေးပါတယ်။",
+                                "image_url": "https://i1.wp.com/www.d2r.biz/wp-content/uploads/2021/07/1590793417455-2.jpg?w=1200&ssl=1",
                                 "buttons": [
                                     {
                                         "type": "postback",
-                                        "title": "LUNCH MENU",
+                                        "title": "B2B Data Plan",
                                         "payload": "LUNCH_MENU",
                                     },
                                     {
-                                        "type": "postback",
-                                        "title": "DINNER MENU",
-                                        "payload": "DINNER_MENU",
+                                        "type": "web_url",
+                                        "title": "DIA WiFi",
+                                        "url": "https://www.d2r.biz/diawifi",
+                                        "webview_height_ratio": "full"
                                     },
                                     {
-                                        "type": "postback",
-                                        "title": "PUB MENU",
-                                        "payload": "PUB_MENU",
+                                        "type": "web_url",
+                                        "title": "👉 inquiry form",
+                                        "url": "https://www.d2r.biz/b2bform",
+                                        "webview_height_ratio": "full"
                                     }
                                 ],
                             },
