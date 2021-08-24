@@ -30,7 +30,7 @@ let getFacebookUsername = (sender_psid) => {
 let sendResponseWelcomeNewCustomer = (username, sender_psid) => {
     return new Promise(async (resolve, reject) => {
         try {
-            let response_first = { "text": `Welcome ${username} to HaryPhamDev's Restaurant` };
+            let response_first = { "text": `မင်္ဂလာပါ ${username} , D2R မှ ကြိုဆိုပါတယ်။ \n\n Ooredoo Myanmar ရဲ့ B2B Internet Package နဲ့ DIA WiFi ကို အသေးစိတ်စုံစမ်းနိုင်ပါပြီ။` };
             let response_second = {
                 "attachment": {
                     "type": "template",
@@ -38,13 +38,13 @@ let sendResponseWelcomeNewCustomer = (username, sender_psid) => {
                         "template_type": "generic",
                         "elements": [
                             {
-                                "title": "HaryPhamDev 's restaurant",
-                                "subtitle": "My restaurant is legendary, its classic wine collection equally so.",
-                                "image_url": "https://bit.ly/imageToSend",
+                                "title": "D2R 😍 Dream2Reality",
+                                "subtitle": "Official B2B partner of Ooredoo Myanmar 🇲🇲",
+                                "image_url": "https://i1.wp.com/www.d2r.biz/wp-content/uploads/2021/08/dia_wif_ads.jpg?w=1200&ssl=1",
                                 "buttons": [
                                     {
                                         "type": "postback",
-                                        "title": "SHOW MAIN MENU",
+                                        "title": "👉 စရအောင်",
                                         "payload": "MAIN_MENU",
                                     },
                                     {
